@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-#Live link: https://github.com/asrafi436/noteTakingGroup-2
+##Live link: https://github.com/asrafi436/noteTakingGroup-2
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
