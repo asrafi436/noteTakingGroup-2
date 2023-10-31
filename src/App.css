@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Playpen Sans', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  place-items: center;
+  background: linear-gradient(35deg, red, purple);
+}
+
+.Tracker-Search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+}
+
+.InputNote {
+  text-align: center;
+  margin: 50px;
+}
+
+.input-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.InputNote textarea {
+  margin: 50px;
+  padding: 6px 12px;
+  background: rgb(31, 32, 35);
+  border: 1px solid rgb(60, 63, 68);
+  border-radius: 4px;
+  font-size: 13px;
+  color: rgb(247, 248, 248);
+  height: 46px;
+  appearance: none;
+  transition: border 0.15s ease 0s;
+  height: 200px;
+  width: 300px;
+
+}
+
+.search-css {
+  padding: 6px 12px;
+  background: rgb(31, 32, 35);
+  border: 1px solid rgb(60, 63, 68);
+  border-radius: 4px;
+  font-size: 13px;
+  color: rgb(247, 248, 248);
+  height: 46px;
+  appearance: none;
+  transition: border 0.15s ease 0s;
+  height: 60px;
+  width: 300px;
+}
+
+.InputNote textarea:focus,
+.search-css:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: rgb(100, 153, 255);
+}
+
+h1 {
+  text-align: center;
+}
+
+.note-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  margin: 20px;
+  height: 350px;
+  width: 350px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.notelist-btns {
+  display: flex;
+  gap: 25px;
+  justify-content: end;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+ul li {
+  flex: 1;
+  flex-basis: 30%;
+  padding: 15px;
+
+}
+
+ul li p {
+  flex: 1;
+  flex-basis: 30%;
+  padding: 15px;
+  overflow:scroll;
+  text-align: justify;
+
+}
+
+.note-list button {
+  width: auto;
+  height: 20px;
+  border: 15px;
+
+}
+
+
+/* CSS */
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+  background-color: #FFFFFF;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+:root {
+  --arrow-bg: rgba(255, 255, 255, 0.3);
+  --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+  --option-bg: white;
+  --select-bg: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* <select> styles */
+select {
+  /* Reset */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 20rem;
+  padding: 1rem 4rem 1rem 1rem;
+  background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+  color: black;
+  font-weight: 600;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  /* Remove IE arrow */
+  &::-ms-expand {
+    display: none;
+  }
+
+  /* Remove focus outline */
+  &:focus {
+    outline: none;
+  }
+
+  /* <option> colors */
+  option {
+    color: inherit;
+    background-color: var(--option-bg);
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .Tracker-Search {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-button {
+
+    flex-direction: column;
+
+  }
+
+  .note-list button {
+    height: 10px;
+
+  }
+}
